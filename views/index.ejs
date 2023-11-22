@@ -23,8 +23,9 @@
                     <% if(publishers.length> 0){ %>
                         <div class=" flex gap-2 py-6">
                             <% publishers.forEach(pub=> { %>
-                                <div onClick="handleSelectPublisher('<%=pub.publisher%>')" class="cursor-pointer rounded-2xl <% if (selected_pub == pub.publisher) { %>
-                                    bg-blue-600 shadow-lg
+                                <div onClick="handleSelectPublisher('<%=pub.publisher%>')" class="cursor-pointer rounded-2xl 
+                                    <% if (selected_pub == pub.publisher) { %>
+                                        bg-blue-600 shadow-lg
                                     <% }else{ %>
                                         bg-blue-400 shadow
                                     <% } %> px-4 py-2">
@@ -32,11 +33,11 @@
                                         <%= pub.publisher %>
                                     </span>
                                 </div>
-                                <% }) %>
+                             <% }) %>
                         </div>
-                        <% } else{ %>
-                            <p>No publishers found</p>
-                            <% } %>
+                    <% } else{ %>
+                        <p>No publishers found</p>
+                    <% } %>
                 </div>
 
                 <div class="flex flex-col items-stretch divide-y">
@@ -66,10 +67,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <% }) %>
-                                <% } else{ %>
-                                    <p>No news</p>
-                                    <% } %>
+                        <% }) %>
+                    <% } else{ %>
+                        <p>No news</p>
+                    <% } %>
                 </div>
 
             </div>
