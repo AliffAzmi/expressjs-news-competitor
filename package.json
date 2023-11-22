@@ -1,0 +1,33 @@
+{
+  "name": "competitor-news-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css",
+    "build:css": "postcss public/styles/tailwind.css -o public/styles/style.css"
+  },
+  "author": "Aliff Azmi",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "dayjs": "^1.11.10",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.4",
+    "langdetect": "^0.2.1",
+    "mongodb": "^6.3.0",
+    "postcss": "^8.4.31",
+    "rss-parser": "^3.13.0",
+    "tailwindcss": "^3.3.5"
+  },
+  "devDependencies": {
+    "axios": "^1.6.2",
+    "md5": "^2.3.0",
+    "node-cron": "^3.0.3",
+    "postcss-cli": "^10.1.0"
+  }
+}
