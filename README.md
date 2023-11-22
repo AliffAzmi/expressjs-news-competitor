@@ -2,6 +2,8 @@
 
 The list of online news in Malaysia. Built on Express.js.
 
+<img width="297" alt="showcase image" src="https://github.com/AliffAzmi/expressjs-news-competitor/assets/46412369/0afdf359-859c-41fa-9fe2-c5d9451aba72">
+
 ## Prerequisites
 
 You will need:
